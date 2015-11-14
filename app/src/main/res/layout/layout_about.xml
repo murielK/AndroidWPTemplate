@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ /*
+  ~  *
+  ~  *  * ****************************************************************************
+  ~  *  * Copyright (c) 2015. Muriel Kamgang Mabou
+  ~  *  * All rights reserved.
+  ~  *  *
+  ~  *  * This file is part of project AndroidWPTemplate.
+  ~  *  * It can not be copied and/or distributed without the
+  ~  *  * express permission of Muriel Kamgang Mabou
+  ~  *  * ****************************************************************************
+  ~  *
+  ~  *
+  ~  */
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color_drawer"
+    android:orientation="vertical"
+    android:padding="@dimen/layout_about_padding">
+
+    <TextView
+        android:id="@+id/textViewAbouyTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/layout_about_text_color"
+        android:textSize="@dimen/fragment_setting_menu_text_size"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/layout_about_margin"
+        android:layout_marginTop="@dimen/layout_about_margin2"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/layout_about_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewAPPVersion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/version"
+                android:textColor="@color/text_menu_color"
+                android:textSize="@dimen/row_setting_menu_text_size" />
+
+            <TextView
+                android:id="@+id/textViewAPPVValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_about_margin1"
+                android:text="Medium Text"
+                android:textColor="@color/text_menu_color"
+                android:textSize="@dimen/row_setting_menu_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/layout_about_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewDev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/developer"
+                android:textColor="@color/text_menu_color"
+                android:textSize="@dimen/row_setting_menu_text_size" />
+
+            <TextView
+                android:id="@+id/textViewDevValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_about_margin1"
+                android:text="@string/muriel_kamgang"
+                android:textColor="@color/text_menu_color"
+                android:textSize="@dimen/row_setting_menu_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/layout_about_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewDesigner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/designer"
+                android:textColor="@color/text_menu_color"
+                android:textSize="@dimen/row_setting_menu_text_size" />
+
+            <TextView
+                android:id="@+id/textView5DesValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_about_margin1"
+                android:text="@string/sasa"
+                android:textColor="@color/text_menu_color"
+                android:textSize="@dimen/row_setting_menu_text_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

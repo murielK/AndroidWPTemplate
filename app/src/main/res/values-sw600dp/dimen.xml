@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ /*
+  ~  *
+  ~  *  * ****************************************************************************
+  ~  *  * Copyright (c) 2015. Muriel Kamgang Mabou
+  ~  *  * All rights reserved.
+  ~  *  *
+  ~  *  * This file is part of project AndroidWPTemplate.
+  ~  *  * It can not be copied and/or distributed without the
+  ~  *  * express permission of Muriel Kamgang Mabou
+  ~  *  * ****************************************************************************
+  ~  *
+  ~  *
+  ~  */
+  -->
+
+<resources>
+    <dimen name="tab_padding_left">20dp</dimen>
+    <dimen name="tab_padding_right">20dp</dimen>
+    <dimen name="tab_text_size">18sp</dimen>
+    <dimen name="drawer_width">536dp</dimen>
+    <dimen name="flexible_space_image_height">300dp</dimen>
+    <dimen name="feed_activity_margin">60dp</dimen>
+    <dimen name="feed_activity_margin1">20dp</dimen>
+    <dimen name="setting_text_size">19sp</dimen>
+    <dimen name="menu_margin">19dp</dimen>
+    <dimen name="drawer_image_weight">240dp</dimen>
+    <dimen name="flexible_space_show_fab_offset">200dp</dimen>
+    <dimen name="feed_viewer_img_width">400px</dimen>
+    <dimen name="feed_viewer_img_height">500px</dimen>
+    <dimen name="activity_feed_view_text_size_2">24sp</dimen>
+    <dimen name="activity_feed_view_text_size_3">17sp</dimen>
+    <dimen name="activity_feed_view_text_size">20sp</dimen>
+    <dimen name="row_title_size">24sp</dimen>
+    <dimen name="row_text_size_13">17sp</dimen>
+    <dimen name="row_text_size_16">20sp</dimen>
+    <dimen name="menu_text_size">20sp</dimen>
+    <dimen name="menu_image_size">40dp</dimen>
+    <dimen name="fab_size">80dp</dimen>
+</resources>

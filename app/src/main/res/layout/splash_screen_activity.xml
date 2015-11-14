@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ /*
+  ~  *
+  ~  *  * ****************************************************************************
+  ~  *  * Copyright (c) 2015. Muriel Kamgang Mabou
+  ~  *  * All rights reserved.
+  ~  *  *
+  ~  *  * This file is part of project AndroidWPTemplate.
+  ~  *  * It can not be copied and/or distributed without the
+  ~  *  * express permission of Muriel Kamgang Mabou
+  ~  *  * ****************************************************************************
+  ~  *
+  ~  *
+  ~  */
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color_drawer"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/imageViewSplash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/splash_margin"
+        android:layout_marginLeft="@dimen/splash_margin"
+        android:layout_marginRight="@dimen/splash_margin"
+        android:layout_marginTop="@dimen/splash_margin3"
+        android:foregroundGravity="center">
+
+
+        <ProgressBar
+            android:id="@+id/progressBarSplash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <LinearLayout
+            android:id="@+id/layoutRetry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="?android:selectableItemBackground"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/splash_margin2"
+            android:visibility="invisible">
+
+            <ImageView
+                android:id="@+id/imageViewRetry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/splash_margin2"
+                android:src="@drawable/ic_refresh" />
+
+            <TextView
+                android:id="@+id/textViewSplash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/retry"
+                android:textColor="@color/text_menu_color"
+                android:textSize="@dimen/splash_text_size" />
+
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ /*
+  ~  *
+  ~  *  * ****************************************************************************
+  ~  *  * Copyright (c) 2015. Muriel Kamgang Mabou
+  ~  *  * All rights reserved.
+  ~  *  *
+  ~  *  * This file is part of project AndroidWPTemplate.
+  ~  *  * It can not be copied and/or distributed without the
+  ~  *  * express permission of Muriel Kamgang Mabou
+  ~  *  * ****************************************************************************
+  ~  *
+  ~  *
+  ~  */
+  -->
+
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string-array name="category_name">
+        <item>Culture</item>
+        <item>SHT</item>
+        <item>Sport</item>
+        <item>News</item>
+        <item>Connection</item>
+    </string-array>
+
+    <string-array name="News">
+        <item>ndole-news</item>
+        <item>actualites</item>
+        <item>flash</item>
+        <item>divers</item>
+        <!--economy-->
+        <item>ndoleconomie</item>
+        <item>cameroon</item>
+        <item>economie</item>
+        <item>finance</item>
+        <item>developpement</item>
+        <item>soft-skills</item>
+        <item>aftique</item>
+    </string-array>
+
+    <string-array name="Culture">
+        <item>ndole-culture</item>
+        <item>histoire </item>
+        <item>fashion</item>
+        <item>homme</item>
+        <item>femme</item>
+        <item>enfants</item>
+        <item>flashback</item>
+        <item>focus</item>
+        <item>lifestyle</item>
+        <item>arret-sur-image</item>
+        <item>vybz</item>
+        <item>remember</item>
+        <item>nouveautes</item>
+        <item>decouvertes</item>
+        <item>africa</item>
+        <item>peeps</item>
+        <item>tchop</item>
+        <item>kmer-link</item>
+    </string-array>
+
+    <string-array name="Sport">
+        <item>ndolesport</item>
+        <item>football</item>
+        <item>equipe-nationale-a</item>
+        <item>joueurs-pro</item>
+        <item>atletisme</item>
+        <item>basketball</item>
+        <item>volleyball</item>
+        <item>boxe</item>
+    </string-array>
+
+    <string-array name="SHT">
+        <item>ndole-sht</item>
+        <item>droit</item>
+        <item>humanitaire</item>
+        <item>astuces</item>
+        <item>beauty</item>
+        <item>ndolescope</item>
+        <item>rzp</item>
+        <item>sante</item>
+        <item>psycho</item>
+        <item>tech</item>
+        <item>vie-en-societe</item>
+        <!--contribution-->
+        <item>ndole-contribution</item>
+        <item>chroniques</item>
+        <item>coup-de-gueule</item>
+        <item>expression-ecrites</item>
+    </string-array>
+
+    <string-array name="Connection">
+        <item>ndole-connection</item>
+        <item>annonces</item>
+        <item>events</item>
+        <item>petition</item>
+        <item>sos</item>
+    </string-array>
+
+    <string-array name="category_colors">
+        <item>#8BC34A</item>
+        <item>#FFC107</item>
+        <item>#9C27B0</item>
+        <item>#009688</item>
+        <item>#E91E63</item>
+    </string-array>
+
+    <string-array name="category_colors_darker">
+        <item>#7CB342</item>
+        <item>#FFB300</item>
+        <item>#8E24AA</item>
+        <item>#00897B</item>
+        <item>#D81B60</item>
+    </string-array>
+</resources>

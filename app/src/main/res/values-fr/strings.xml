@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ /*
+  ~  *
+  ~  *  * ****************************************************************************
+  ~  *  * Copyright (c) 2015. Muriel Kamgang Mabou
+  ~  *  * All rights reserved.
+  ~  *  *
+  ~  *  * This file is part of project AndroidWPTemplate.
+  ~  *  * It can not be copied and/or distributed without the
+  ~  *  * express permission of Muriel Kamgang Mabou
+  ~  *  * ****************************************************************************
+  ~  *
+  ~  *
+  ~  */
+  -->
+
+<resources>
+    <string name="hello_world">Salut!</string>
+    <string name="action_settings">Paramètres</string>
+    <string name="no_internet_connection">Aucune connection internet</string>
+    <string name="baseUrl">http://lwn-mag.com</string>
+    <string name="date_hours_holder">depuis {hour} heure</string>
+    <string name="date_min_holder">depuis {min} minute</string>
+    <string name="date_day_holder">depuis {day} jour</string>
+    <string name="date_hours_holder_pl">depuis {hour} heures</string>
+    <string name="date_min_holder_pl">depuis {min} minutes</string>
+    <string name="date_day_holder_pl">depuis {day} jours</string>
+    <string name="yesterday">Hier</string>
+    <string name="fav_added">Article ajouté aux favoris</string>
+    <string name="share">Partager</string>
+    <string name="favorite">Favoris</string>
+    <string name="share_fail">erreur: impossible de trouver le lien de l’article</string>
+    <string name="settings">Paramètres</string>
+    <string name="visit_us">Rejoignez nous sur</string>
+    <string name="share_with">Partagez avec</string>
+    <string name="action_search">Recherche</string>
+    <string name="facebook">Facebook</string>
+    <string name="twitter">Twitter</string>
+    <string name="google_plus">Google+</string>
+    <string name="fb_link">https://www.facebook.com/LwnMag</string>
+    <string name="tw_link">https://twitter.com/LesWaysNdole</string>
+    <string name="g_link">https://google.com/+</string>
+    <string name="open_with">Ouvrir avec</string>
+    <string name="no_favorite_found">Aucun favori</string>
+    <string name="fav_delete">Article supprimé de la liste des favoris</string>
+    <string name="retry">Essayer encore?</string>
+    <string name="no_internet_connection_retry">Aucune connexion internet, connectez vous à internet et réessayez</string>
+    <string name="init_fail_retry">Echec de l’initialisation…réessayez plus tard svp</string>
+    <string name="no_update">vérifier les mises à jour dans %d minute(s)</string>
+    <string name="no_article_found">Aucun article trouvé</string>
+    <string name="read_more">+ de details sur notre site web</string>
+    <string name="reload">Recharger</string>
+    <string name="news">News</string>
+    <string name="notification">NOTIFICATION</string>
+    <string name="default_text">Sound et vibration</string>
+    <string name="developer">Developer: </string>
+    <string name="muriel_kamgang">Muriel Kamgang</string>
+    <string name="designer">Designer: </string>
+    <string name="sasa">Saša Kadrijević</string>
+    <string name="about">A PROPOS</string>
+    <string name="version">Version: </string>
+    <string name="ok">OK</string>
+    <string name="enable_sound">Activer la sonnerie</string>
+    <string name="enable_vib">Activer le vibreur</string>
+    <string name="enable_notification">Activer les Notifications Push</string>
+    <string name="app_name">LWN Magazine</string>
+    <string name="download_article_images">Télécharger les images </string>
+    <string name="other">AUTRES</string>
+    <string name="date_sec_holder">depuis {sec} seconde</string>
+    <string name="date_sec_holder_pl">depuis {sec} secondes</string>
+    <string name="at">à</string>
+    <string name="could_not_load_link">Impossible d\' ouvrir le lien</string>
+</resources>

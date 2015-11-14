@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ /*
+  ~  *
+  ~  *  * ****************************************************************************
+  ~  *  * Copyright (c) 2015. Muriel Kamgang Mabou
+  ~  *  * All rights reserved.
+  ~  *  *
+  ~  *  * This file is part of project AndroidWPTemplate.
+  ~  *  * It can not be copied and/or distributed without the
+  ~  *  * express permission of Muriel Kamgang Mabou
+  ~  *  * ****************************************************************************
+  ~  *
+  ~  *
+  ~  */
+  -->
+
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:oneshot="false">
+
+  <item
+      android:drawable="@drawable/anim_1"
+      android:duration="33" />
+  <item
+      android:drawable="@drawable/anim_2"
+      android:duration="33" />
+  <item
+      android:drawable="@drawable/anim_3"
+      android:duration="33" />
+  <item
+      android:drawable="@drawable/anim_4"
+      android:duration="33" />
+  <item
+      android:drawable="@drawable/anim_5"
+      android:duration="33" />
+  <item
+      android:drawable="@drawable/anim_6"
+      android:duration="33" />
+  <item
+      android:drawable="@drawable/anim_7"
+      android:duration="33" />
+  <item
+      android:drawable="@drawable/anim_8"
+      android:duration="33" />
+  <item
+      android:drawable="@drawable/anim_9"
+      android:duration="33" />
+  <item
+      android:drawable="@drawable/anim_10"
+      android:duration="33" />
+
+  <item
+      android:drawable="@drawable/anim_11"
+      android:duration="33" />
+  <item
+      android:drawable="@drawable/anim_12"
+      android:duration="33" />
+  <item
+      android:drawable="@drawable/anim_13"
+      android:duration="33" />
+  <item
+      android:drawable="@drawable/anim_14"
+      android:duration="33" />
+  <item
+      android:drawable="@drawable/anim_15"
+      android:duration="33" />
+  <item
+      android:drawable="@drawable/anim_16"
+      android:duration="33" />
+  <item
+      android:drawable="@drawable/anim_17"
+      android:duration="33" />
+  <item
+      android:drawable="@drawable/anim_18"
+      android:duration="33" />
+  <item
+      android:drawable="@drawable/anim_19"
+      android:duration="33" />
+  <item
+      android:drawable="@drawable/anim_20"
+      android:duration="33" />
+
+  <item
+      android:drawable="@drawable/anim_21"
+      android:duration="33" />
+  <item
+      android:drawable="@drawable/anim_22"
+      android:duration="33" />
+  <item
+      android:drawable="@drawable/anim_23"
+      android:duration="33" />
+  <item
+      android:drawable="@drawable/anim_24"
+      android:duration="33" />
+  <item
+      android:drawable="@drawable/anim_25"
+      android:duration="33" />
+  <item
+      android:drawable="@drawable/anim_26"
+      android:duration="33" />
+  <item
+      android:drawable="@drawable/anim_27"
+      android:duration="33" />
+  <item
+      android:drawable="@drawable/anim_28"
+      android:duration="33" />
+  <item
+      android:drawable="@drawable/anim_29"
+      android:duration="33" />
+  <item
+      android:drawable="@drawable/anim_30"
+      android:duration="33" />
+
+
+</animation-list>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ /*
+  ~  *
+  ~  *  * ****************************************************************************
+  ~  *  * Copyright (c) 2015. Muriel Kamgang Mabou
+  ~  *  * All rights reserved.
+  ~  *  *
+  ~  *  * This file is part of project AndroidWPTemplate.
+  ~  *  * It can not be copied and/or distributed without the
+  ~  *  * express permission of Muriel Kamgang Mabou
+  ~  *  * ****************************************************************************
+  ~  *
+  ~  *
+  ~  */
+  -->
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+
+    card_view:cardCornerRadius="@dimen/row_feed_card_radius">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/row_image_height"
+                    android:elevation="10dp" />
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:ellipsize="end"
+                    android:lines="2"
+                    android:paddingBottom="@dimen/row_margin_5"
+                    android:paddingLeft="@dimen/row_margin_16"
+                    android:paddingRight="@dimen/row_margin_16"
+                    android:paddingTop="@dimen/row_margin_16"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/row_title_size"
+                    tools:text="test" />
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:paddingBottom="@dimen/row_margin_5"
+                    android:paddingLeft="@dimen/row_margin_16"
+                    android:paddingRight="@dimen/row_margin_16"
+                    android:textColor="@color/black_soft"
+                    android:textSize="@dimen/row_text_size_13" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/clickView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?android:selectableItemBackground"
+                android:orientation="horizontal"
+                android:visibility="visible" />
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/layoutShare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?android:selectableItemBackground"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/row_margin_16">
+
+                    <ImageView
+                        android:id="@+id/imageViewShare"
+                        android:layout_width="@dimen/row_feed_card_size"
+                        android:layout_height="@dimen/row_feed_card_size"
+                        android:src="@drawable/ic_share" />
+
+                    <TextView
+                        android:id="@+id/textViewShare"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/row_feed_card_size1"
+                        android:layout_marginLeft="@dimen/row_margin_5"
+                        android:layout_marginRight="@dimen/row_margin_5"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:text="@string/share"
+                        android:textColor="@color/black_soft"
+                        android:textSize="@dimen/row_text_size_16" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:descendantFocusability="blocksDescendants"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/layoutFavorite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:background="?android:selectableItemBackground"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/row_margin_16">
+
+                    <ImageView
+                        android:id="@+id/imageViewFav"
+                        android:layout_width="@dimen/row_feed_card_size"
+                        android:layout_height="@dimen/row_feed_card_size"
+                        android:src="@drawable/ic_fav_main_false" />
+
+                    <TextView
+                        android:id="@+id/textViewFav"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/row_feed_card_size1"
+                        android:layout_marginLeft="@dimen/row_margin_5"
+                        android:layout_marginRight="@dimen/row_margin_5"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:text="@string/favorite"
+                        android:textColor="@color/black_soft"
+                        android:textSize="@dimen/activity_feed_view_text_size" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

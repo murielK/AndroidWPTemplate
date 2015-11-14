@@ -1,0 +1,63 @@
+<!--
+  ~ /*
+  ~  *
+  ~  *  * ****************************************************************************
+  ~  *  * Copyright (c) 2015. Muriel Kamgang Mabou
+  ~  *  * All rights reserved.
+  ~  *  *
+  ~  *  * This file is part of project AndroidWPTemplate.
+  ~  *  * It can not be copied and/or distributed without the
+  ~  *  * express permission of Muriel Kamgang Mabou
+  ~  *  * ****************************************************************************
+  ~  *
+  ~  *
+  ~  */
+  -->
+
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="tab_height">48dp</dimen>
+    <dimen name="elevation">5dp</dimen>
+    <dimen name="tab_padding_left">16dp</dimen>
+    <dimen name="tab_padding_right">16dp</dimen>
+    <dimen name="tab_text_size">14sp</dimen>
+    <dimen name="drawer_image_weight">180dp</dimen>
+    <dimen name="flexible_space_image_height">240dp</dimen>
+    <dimen name="toolbar_margin_start">72dp</dimen>
+    <dimen name="activity_feed_view_text_size">16sp</dimen>
+    <dimen name="flexible_space_show_fab_offset">180dp</dimen>
+    <dimen name="margin_standard">16dp</dimen>
+    <dimen name="activity_feed_view_text_size_2">20sp</dimen>
+    <dimen name="feed_activity_margin">30dp</dimen>
+    <dimen name="feed_activity_margin1">16dp</dimen>
+    <dimen name="activity_feed_view_text_size_3">13sp</dimen>
+    <dimen name="feed_activity_margin2">10dp</dimen>
+    <dimen name="feed_activity_margin4">5dp</dimen>
+    <dimen name="row_feed_card_radius">1dp</dimen>
+    <dimen name="feed_activity_margin3">60dp</dimen>
+    <dimen name="row_feed_card_size">25dp</dimen>
+    <dimen name="row_feed_card_size1">30dp</dimen>
+    <dimen name="row_title_size">20sp</dimen>
+    <dimen name="menu_margin">16dp</dimen>
+    <dimen name="menu_text_size">16sp</dimen>
+    <dimen name="menu_image_size">30dp</dimen>
+    <dimen name="menu_padding">6dp</dimen>
+    <dimen name="menu_margin2">10dp</dimen>
+    <dimen name="dis_to_sync">100dp</dimen>
+    <dimen name="splash_margin">20dp</dimen>
+    <dimen name="splash_margin2">5dp</dimen>
+    <dimen name="splash_text_size">18sp</dimen>
+    <dimen name="splash_margin3">30dp</dimen>
+    <dimen name="card_view_max_width">400dp</dimen>
+    <dimen name="web_progress_bar_height">3dp</dimen>
+    <dimen name="layout_about_padding">12dp</dimen>
+    <dimen name="fragment_setting_menu_text_size">20sp</dimen>
+    <dimen name="layout_about_margin">10dp</dimen>
+    <dimen name="row_setting_menu_text_size">16sp</dimen>
+    <dimen name="layout_about_margin1">5dp</dimen>
+    <dimen name="setting_text_size">15sp</dimen>
+    <dimen name="layout_about_margin2">20dp</dimen>
+    <dimen name="drawer_width">280dp</dimen>
+</resources>

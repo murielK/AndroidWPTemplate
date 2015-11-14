@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ /*
+  ~  *
+  ~  *  * ****************************************************************************
+  ~  *  * Copyright (c) 2015. Muriel Kamgang Mabou
+  ~  *  * All rights reserved.
+  ~  *  *
+  ~  *  * This file is part of project AndroidWPTemplate.
+  ~  *  * It can not be copied and/or distributed without the
+  ~  *  * express permission of Muriel Kamgang Mabou
+  ~  *  * ****************************************************************************
+  ~  *
+  ~  *
+  ~  */
+  -->
+
+<resources>
+
+    <dimen name="drawer_width">656dp</dimen>
+    <dimen name="flexible_space_image_height">360dp</dimen>
+    <dimen name="drawer_image_weight">300dp</dimen>
+    <dimen name="feed_activity_margin">75dp</dimen>
+    <dimen name="feed_activity_margin1">30dp</dimen>
+</resources>

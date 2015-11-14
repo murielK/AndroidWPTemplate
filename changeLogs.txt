@@ -1,0 +1,18 @@
+V1.1.2
+-Fixed: The "search" feature is back  (it was disabled by mistake on the previous release)
+
+V1.1.1
+-Fixed notification bug where new notifications will cancel old ones
+-Brand new article images downloader module, images on articles should consume less memory, load much faster and smoother with a better image quality
+-Ability to disable/enable images on articles (in settings) to reduce mobile data consumption (now images are disable by default on articles)
+-Better overall memory usage; the app should use less memory than before for better multitasking on low end devices
+-Other under the hood fixes and improvements
+
+V1.1
+-Added picture on articles
+-Now links can be clickable 
+-Fix swipe manual refresh bug
+-Some others improvements and bug fixes
+
+V1.0
+-Initial release

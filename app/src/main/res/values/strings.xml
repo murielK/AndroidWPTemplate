@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ /*
+  ~  *
+  ~  *  * ****************************************************************************
+  ~  *  * Copyright (c) 2015. Muriel Kamgang Mabou
+  ~  *  * All rights reserved.
+  ~  *  *
+  ~  *  * This file is part of project AndroidWPTemplate.
+  ~  *  * It can not be copied and/or distributed without the
+  ~  *  * express permission of Muriel Kamgang Mabou
+  ~  *  * ****************************************************************************
+  ~  *
+  ~  *
+  ~  */
+  -->
+
+<resources>
+    <string name="app_name">WPMagazine</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="no_internet_connection">No internet</string>
+    <string name="baseUrl"> </string>
+    <string name="date_hours_holder">{hour} hour ago</string>
+    <string name="date_min_holder">{min} minute ago</string>
+    <string name="date_day_holder">{day} day ago</string>
+    <string name="date_hours_holder_pl">{hour} hours ago</string>
+    <string name="date_min_holder_pl">{min} minutes ago</string>
+    <string name="date_day_holder_pl">{day} days ago</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="fav_added">Article added to favorites</string>
+    <string name="share">Share</string>
+    <string name="favorite">Favorites</string>
+    <string name="share_fail">error: could not found the article link</string>
+    <string name="settings">Settings</string>
+    <string name="visit_us">Visit us on</string>
+    <string name="share_with">Share with</string>
+    <string name="action_search">Search</string>
+    <string name="facebook">Facebook</string>
+    <string name="twitter">Twitter</string>
+    <string name="google_plus">Google+</string>
+    <string name="fb_link" />
+    <string name="tw_link" />
+    <string name="g_link" />
+    <string name="open_with">Open with</string>
+    <string name="no_favorite_found">No favorites found</string>
+    <string name="fav_delete">Article removed from favorites</string>
+    <string name="retry">Try again?</string>
+    <string name="no_internet_connection_retry">No internet connection, please connect to the internet and try again</string>
+    <string name="init_fail_retry">Initialization failed…please try again later</string>
+    <string name="no_update">check for updates in %d min(s)</string>
+    <string name="no_article_found">No articles found</string>
+    <string name="read_more">+ read more on our website</string>
+    <string name="reload">Reload</string>
+    <string name="news">News</string>
+    <string name="notification">NOTIFICATION</string>
+    <string name="default_text">Sound and vibration</string>
+    <string name="developer">Developer: </string>
+    <string name="muriel_kamgang">Muriel Kamgang</string>
+    <string name="designer">Designer: </string>
+    <string name="sasa">Saša Kadrijević</string>
+    <string name="about">ABOUT</string>
+    <string name="version">App version: </string>
+    <string name="ok">OK</string>
+    <string name="enable_sound">Enable sound</string>
+    <string name="enable_vib">Enable vibration</string>
+    <string name="enable_notification">Enable Push Notification</string>
+    <string name="post_type"> </string>
+    <string name="gallery">Gallery</string>
+    <string name="other">OTHER</string>
+    <string name="download_article_images">Download article pictures</string>
+    <string name="date_sec_holder_pl">{sec} seconds ago</string>
+    <string name="date_sec_holder">{sec} second ago</string>
+    <string name="at">at</string>
+    <string name="could_not_load_link">Could not load the link</string>
+    <string name="project_id">yourProjectID</string>
+</resources>

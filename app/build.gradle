@@ -1,0 +1,151 @@
+/*
+ *
+ *  *
+ *  *  * ****************************************************************************
+ *  *  * Copyright (c) 2015. Muriel Kamgang Mabou
+ *  *  * All rights reserved.
+ *  *  *
+ *  *  * This file is part of project AndroidWPTemplate.
+ *  *  * It can not be copied and/or distributed without the
+ *  *  * express permission of Muriel Kamgang Mabou
+ *  *  * ****************************************************************************
+ *  *
+ *  *
+ *
+ */
+
+apply plugin: 'com.android.application'
+
+android {
+    packagingOptions {
+        exclude 'META-INF/services/javax.annotation.processing.Processor'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/ASL2.0'
+    }
+    def code
+    def versionPropsFile = file('code.properties');
+    if (versionPropsFile.exists()) {
+        def Properties versionProps = new Properties()
+        versionProps.load(new FileInputStream(versionPropsFile))
+        code = versionProps['VERSION_CODE'].toInteger() + 1
+        versionProps['VERSION_CODE'] = code.toString()
+        versionProps.store(versionPropsFile.newWriter(), null)
+    } else {
+        throw new GradleException("Could not read version.properties!")
+    }
+
+    lintOptions {
+        checkReleaseBuilds true
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+    compileSdkVersion 23
+    buildToolsVersion "21.1.2"
+    useLibrary 'org.apache.http.legacy'
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 22
+
+    }
+
+    productFlavors {
+
+        filip_radic {
+            versionName "1.0"
+            applicationId "hr.mk.wpgallery.fradic"
+            versionCode code
+        }
+
+        lwn_magazine {
+            versionName "1.2"
+            applicationId "hr.mk.wpmagazine.lwn"
+            versionCode code
+        }
+    }
+
+    buildTypes {
+
+        debug {
+            zipAlignEnabled true
+            debuggable true
+            minifyEnabled true
+            shrinkResources true
+            versionNameSuffix "-debug-vcode-" + code.toString()
+            applicationIdSuffix ".debug"
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        release {
+            zipAlignEnabled true
+            debuggable false
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+    }
+    android.applicationVariants.all { v ->
+        println "****************************"
+        println "variant: ${v.name}"
+        println "flavor: ${v.flavorName}"
+        println "****************************"
+        if (v.buildType.name.equals("debug")) {
+            v.outputs.each { output ->
+                def outputFile = output.outputFile
+                if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                    def fileName = "${v.productFlavors.applicationId}-${v.buildType.name}-version_${productFlavors.versionName}.apk"
+                    fileName = fileName.replace("[", "")
+                    fileName = fileName.replace("]", "")
+                    output.outputFile = new File(outputFile.parent, fileName)
+                }
+            }
+        } else {
+            v.outputs.each { output ->
+                def outputFile = output.outputFile
+                if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                    def fileName = "${v.productFlavors.applicationId}-${v.buildType.name}-version_${productFlavors.versionName}-vCode${productFlavors.versionCode}.apk"
+                    fileName = fileName.replace("[", "")
+                    fileName = fileName.replace("]", "")
+                    output.outputFile = new File(outputFile.parent, fileName)
+                }
+            }
+        }
+    }
+
+    dependencies {
+        // compile fileTree(dir: 'libs', include: ['*.jar'])
+        compile 'com.android.support:appcompat-v7:23.1.0'
+        compile 'org.springframework.android:spring-android-rest-template:1.0.1.RELEASE'
+        compile 'org.springframework.android:spring-android-core:1.0.1.RELEASE'
+        compile('org.springframework.android:spring-android-auth:1.+') {
+            exclude group: 'org.springframework', module: 'commons-logging'
+            exclude group: 'org.springframework', module: 'spring-core'
+            exclude group: 'org.springframework', module: 'spring-web'
+        }
+        compile 'com.google.android.gms:play-services-gcm:8.1.0'
+        compile 'com.github.ksoichiro:android-observablescrollview:1.5.0'
+        compile 'com.jakewharton:butterknife:6.1.0'
+        compile 'com.squareup.picasso:picasso:2.5.2'
+        compile 'com.fasterxml.jackson.core:jackson-databind:2.2.4'
+        compile 'com.fasterxml.jackson.core:jackson-core:2.2.4'
+        compile 'com.fasterxml.jackson.core:jackson-annotations:2.2.4'
+        compile 'com.squareup.okhttp:okhttp:2.0.0'
+        compile 'com.squareup.okhttp:okhttp-urlconnection:2.0.0'
+        compile 'de.greenrobot:eventbus:2.4.0'
+        compile 'io.realm:realm-android:0.80.0'
+        compile 'com.readystatesoftware.systembartint:systembartint:1.0.4'
+        compile 'com.melnykov:floatingactionbutton:1.0.7'
+        compile 'com.android.support:cardview-v7:23.1.0'
+        compile 'jp.wasabeef:recyclerview-animators:2.0.0'
+        compile 'com.android.support:recyclerview-v7:23.1.0'
+    }
+
+}

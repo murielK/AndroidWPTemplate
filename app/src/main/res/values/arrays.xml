@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ /*
+  ~  *
+  ~  *  * ****************************************************************************
+  ~  *  * Copyright (c) 2015. Muriel Kamgang Mabou
+  ~  *  * All rights reserved.
+  ~  *  *
+  ~  *  * This file is part of project AndroidWPTemplate.
+  ~  *  * It can not be copied and/or distributed without the
+  ~  *  * express permission of Muriel Kamgang Mabou
+  ~  *  * ****************************************************************************
+  ~  *
+  ~  *
+  ~  */
+  -->
+
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string-array name="category_name">
+        <item>DUMMY</item>
+        <item>DUMMY</item>
+        <item>DUMMY</item>
+        <item>DUMMY</item>
+        <item>DUMMY</item>
+        <item>DUMMY</item>
+        <item>DUMMY</item>
+    </string-array>
+
+    <string-array name="DUMMY"></string-array>
+    <string-array name="category_colors">
+        <item>#4CAF50</item>
+        <item>#009688</item>
+        <item>#3F51B5</item>
+        <item>#F44336</item>
+        <item>#2196F3</item>
+        <item>#FF9800</item>
+        <item>#FFC107</item>
+    </string-array>
+
+    <string-array name="category_colors_darker">
+        <item>#43A047</item>
+        <item>#00897B</item>
+        <item>#3949AB</item>
+        <item>#E53935</item>
+        <item>#1E88E5</item>
+        <item>#FB8C00</item>
+        <item>#FFB300</item>
+    </string-array>
+</resources>

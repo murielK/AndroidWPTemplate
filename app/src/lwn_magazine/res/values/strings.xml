@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ /*
+  ~  *
+  ~  *  * ****************************************************************************
+  ~  *  * Copyright (c) 2015. Muriel Kamgang Mabou
+  ~  *  * All rights reserved.
+  ~  *  *
+  ~  *  * This file is part of project AndroidWPTemplate.
+  ~  *  * It can not be copied and/or distributed without the
+  ~  *  * express permission of Muriel Kamgang Mabou
+  ~  *  * ****************************************************************************
+  ~  *
+  ~  *
+  ~  */
+  -->
+
+<resources>
+    <string name="app_name">LWN Magazine</string>
+    <string name="hello_world">Project LWN MAGAZINE just started!</string>
+    <string name="action_settings">Settings</string>
+    <string name="baseUrl">http://lwn-mag.com</string>
+    <string name="fb_link">https://www.facebook.com/LwnMag</string>
+    <string name="tw_link">https://twitter.com/LesWaysNdole</string>
+    <string name="g_link">https://google.com/+Lwnmagazine</string>
+    <string name="post_type">post</string>
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ /*
+  ~  *
+  ~  *  * ****************************************************************************
+  ~  *  * Copyright (c) 2015. Muriel Kamgang Mabou
+  ~  *  * All rights reserved.
+  ~  *  *
+  ~  *  * This file is part of project AndroidWPTemplate.
+  ~  *  * It can not be copied and/or distributed without the
+  ~  *  * express permission of Muriel Kamgang Mabou
+  ~  *  * ****************************************************************************
+  ~  *
+  ~  *
+  ~  */
+  -->
+
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="pop_up_background">#99000000</color>
+    <color name="primaryColor">#2196F3</color>
+    <color name="colorPrimaryDark">#1976D2</color>
+    <color name="black">#b0000000</color>
+    <color name="black_soft">#a9000000</color>
+    <color name="grey_300">#E0E0E0</color>
+    <color name="separator_color">#c4c4c4</color>
+    <color name="text_menu_color">#363738</color>
+    <color name="bg_color_drawer">#f5f5f5</color>
+    <color name="splash_status_color">@color/primaryColor</color>
+    <color name="link">#2196F3</color>
+    <color name="layout_about_text_color">#FF000000</color>
+</resources>
