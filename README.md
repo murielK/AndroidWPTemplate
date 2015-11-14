@@ -14,11 +14,11 @@ The app supports devices running Android 4.0.3+ and is optimized for phone and t
 
 #How to Work with the Source
 
-* [How to build](https://github.com/murielK/WPAndroidTemplate/blob/master/BUILDING.md)
-* [Set up](https://github.com/murielK/WPAndroidTemplate/blob/master/SETUP.md)
+* [How to build](https://github.com/murielK/AndroidWPTemplate/blob/master/BUILDING.md)
+* [Set up](https://github.com/murielK/AndroidWPTemplate/blob/master/SETUP.md)
 
 #Copyright
 
 Licensed under the GNU General Public License v2.0
 
-* [GPLv2](https://github.com/murielK/WPAndroidTemplate/blob/master/LICENSE.md)
+* [GPLv2](https://github.com/murielK/AndroidWPTemplate/blob/master/LICENSE.md)
