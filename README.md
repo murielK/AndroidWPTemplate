@@ -17,7 +17,7 @@ The app supports devices running Android 4.0.3+ and is optimized for phone and t
 * [How to build](https://github.com/murielK/AndroidWPTemplate/blob/master/BUILDING.md)
 * [Set up](https://github.com/murielK/AndroidWPTemplate/blob/master/SETUP.md)
 
-#Sample Aplication
+#Sample Application
 
 * [LWN Magazine](https://play.google.com/store/apps/details?id=hr.mk.wpmagazine.lwn)
 
