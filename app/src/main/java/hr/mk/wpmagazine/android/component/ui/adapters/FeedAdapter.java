@@ -149,11 +149,12 @@ public class FeedAdapter extends WPAdapter {
                         .error(R.drawable.img_holder)
                         .into(myHolder.image);
 
-                if (!calledUrl.contains(url)) {
-                    if (calledUrl.size() == MAX_FLUSH_SIZE)
-                        calledUrl.remove(0);
-                    calledUrl.add(url);
-                }
+                  /*temporary disabling this */
+//                if (!calledUrl.contains(url)) {
+//                    if (calledUrl.size() == MAX_FLUSH_SIZE)
+//                        calledUrl.remove(0);
+//                    calledUrl.add(url);
+//                }
 
             } else
                 myHolder.image.setImageDrawable(context.getResources().getDrawable(R.drawable.img_holder));

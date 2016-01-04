@@ -114,8 +114,6 @@ public class ImageGetterUtils implements Html.ImageGetter {
                     final float maxWidthPx = context.getResources().getDimension(R.dimen.feed_viewer_img_width);
                     m.setRectToRect(new RectF(0, 0, bitmapTemp.getWidth(), bitmapTemp.getHeight()), new RectF(0, 0, (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, bitmapTemp.getWidth() > maxWidthPx ? maxWidthPx : bitmapTemp.getWidth(), context.getResources().getDisplayMetrics()), (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, bitmapTemp.getHeight() > maxHeightPx ? maxHeightPx : bitmapTemp.getHeight(), context.getResources().getDisplayMetrics())), Matrix.ScaleToFit.CENTER);
                     final Bitmap bitmap = Bitmap.createBitmap(bitmapTemp, 0, 0, bitmapTemp.getWidth(), bitmapTemp.getHeight(), m, true);
-                    bitmapTemp.recycle();
-                    bitmapTemp = null; //Forcing it to be garbage
                     map.put(source, bitmap);
                     Log.d(TAG, String.format("Bitmap with ID %d scaled final sized: %dKB",localCount.get(), bitmap.getByteCount() / 1024)); //can be a huge difference from the original depending on the screen size/density
                     //PicassoUtils.getImageCache(context).set(source, bitmap);

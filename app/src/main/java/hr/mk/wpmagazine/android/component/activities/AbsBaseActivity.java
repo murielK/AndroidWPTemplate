@@ -42,6 +42,7 @@ import android.widget.Toast;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesUtil;
 import com.google.android.gms.gcm.GoogleCloudMessaging;
+import com.google.android.gms.iid.InstanceID;
 import com.readystatesoftware.systembartint.SystemBarTintManager;
 
 import org.apache.http.client.HttpClient;
@@ -51,6 +52,7 @@ import org.apache.http.impl.client.DefaultHttpClient;
 import butterknife.ButterKnife;
 import de.greenrobot.event.EventBus;
 import hr.mk.wpmagazine.Utils.ConnectivityUtils;
+import hr.mk.wpmagazine.Utils.ExecutorUtils;
 import hr.mk.wpmagazine.Utils.PreferenceUtils;
 import hr.mk.wpmagazine.Utils.TagFactoryUtils;
 import hr.mk.wpmagazine.android.component.R;
@@ -68,6 +70,7 @@ public class AbsBaseActivity extends ActionBarActivity {
     private static final int PLAY_SERVICES_RESOLUTION_REQUEST = 9000;
     private static final String TAG = TagFactoryUtils.getTag(AbsBaseActivity.class);
 
+    private static final Object lock = new Object();
     protected PopUpMessageHelper popUpMessageHelper;
     protected EventBus eventBus;
     String regID;
@@ -309,37 +312,44 @@ public class AbsBaseActivity extends ActionBarActivity {
     }
 
     private void registerInBackground() {
-
-        new Thread(new Runnable() {
+        ExecutorUtils.getExecutor().execute(new Runnable() {
             @Override
             public void run() {
-                String msg = "";
-                try {
-                    if (gcm == null) {
-                        gcm = GoogleCloudMessaging.getInstance(AbsBaseActivity.this);
+                synchronized (lock) {
+                    if (!getRegistrationId(AbsBaseActivity.this).isEmpty())
+                        return;
+
+                    String msg = "";
+                    Log.d(TAG, "Trying to registered this device to GCM");
+                    try {
+                        if (gcm == null) {
+                            gcm = GoogleCloudMessaging.getInstance(AbsBaseActivity.this);
+                        }
+                        final InstanceID instanceID = InstanceID.getInstance(AbsBaseActivity.this);
+                        final String projectId = AbsBaseActivity.this.getResources().getString(R.string.project_id);
+                        Log.d(TAG, String.format("GCM project ID: %s",projectId));
+                        regID = instanceID.getToken(projectId,GoogleCloudMessaging.INSTANCE_ID_SCOPE, null);
+                        Log.d(TAG, String.format("Device registered, registration ID= %s", regID));
+                        // You should send the registration ID to your server over HTTP,
+                        // so it can use GCM/HTTP or CCS to send messages to your app.
+                        // The request to your server should be authenticated if your app
+                        // is using accounts.
+
+                        // For this demo: we don't need to send it because the device
+                        // will send upstream messages to a server that echo back the
+                        // message using the 'from' address in the message.
+
+                        // Persist the regID - no need to register again.
+                        Log.d(TAG, "Trying to reg to server for Push notifications");
+                        SendRegIDTOServer(regID);
+                        storeRegistrationId(AbsBaseActivity.this, regID);
+                        Log.d(TAG, "registration done");
+                    } catch (Exception e) {
+                        Log.d(TAG, msg, e);
                     }
-                    regID = gcm.register(AbsBaseActivity.this.getResources().getString(R.string.project_id));
-                    Log.d(TAG, String.format("Device registered, registration ID= %s", regID));
-                    // You should send the registration ID to your server over HTTP,
-                    // so it can use GCM/HTTP or CCS to send messages to your app.
-                    // The request to your server should be authenticated if your app
-                    // is using accounts.
-
-                    // For this demo: we don't need to send it because the device
-                    // will send upstream messages to a server that echo back the
-                    // message using the 'from' address in the message.
-
-                    // Persist the regID - no need to register again.
-                    Log.d(TAG, "Trying to reg to server for Push notifications");
-                    SendRegIDTOServer(regID);
-                    storeRegistrationId(AbsBaseActivity.this, regID);
-                    Log.d(TAG, "registration done");
-                } catch (Exception e) {
-                    Log.d(TAG, msg, e);
                 }
             }
-        }).start();
-
+        });
     }
 
     public void SendRegIDTOServer(final String regid) throws Exception {

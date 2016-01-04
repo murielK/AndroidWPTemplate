@@ -17,6 +17,6 @@
   -->
 
 <resources>
-    <integer name="span_count">3</integer>
+    <integer name="span_count">2</integer>
     <integer name="span_size">1</integer>
 </resources>
