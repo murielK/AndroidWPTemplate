@@ -27,7 +27,7 @@ import android.os.Bundle;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.transition.ChangeImageTransform;
 import android.transition.ChangeTransform;
@@ -64,7 +64,7 @@ import hr.mk.wpmagazine.model.BusEvents;
 /**
  * Created by Mur0 on 3/15/2015.
  */
-public class AbsBaseActivity extends ActionBarActivity {
+public class AbsBaseActivity extends AppCompatActivity {
 
     public static final String START_UPDATE_DELAY = "START_UPDATE_DELAY";
     private static final int PLAY_SERVICES_RESOLUTION_REQUEST = 9000;
@@ -327,8 +327,8 @@ public class AbsBaseActivity extends ActionBarActivity {
                         }
                         final InstanceID instanceID = InstanceID.getInstance(AbsBaseActivity.this);
                         final String projectId = AbsBaseActivity.this.getResources().getString(R.string.project_id);
-                        Log.d(TAG, String.format("GCM project ID: %s",projectId));
-                        regID = instanceID.getToken(projectId,GoogleCloudMessaging.INSTANCE_ID_SCOPE, null);
+                        Log.d(TAG, String.format("GCM project ID: %s", projectId));
+                        regID = instanceID.getToken(projectId, GoogleCloudMessaging.INSTANCE_ID_SCOPE, null);
                         Log.d(TAG, String.format("Device registered, registration ID= %s", regID));
                         // You should send the registration ID to your server over HTTP,
                         // so it can use GCM/HTTP or CCS to send messages to your app.

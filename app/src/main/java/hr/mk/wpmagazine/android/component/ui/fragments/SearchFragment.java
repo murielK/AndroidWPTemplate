@@ -17,7 +17,7 @@
 package hr.mk.wpmagazine.android.component.ui.fragments;
 
 import android.support.v7.app.ActionBar;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageView;
@@ -74,10 +74,10 @@ public class SearchFragment extends AbsFeedFragment {
         else
             toast(getResources().getString(R.string.fav_delete));
 
-        final ActionBarActivity actionBarActivity = (ActionBarActivity) getActivity();
-        final ActionBar ab = actionBarActivity.getSupportActionBar();
-        if (!ab.isShowing())
-            ab.show();
+        final AppCompatActivity appCompatActivity = (AppCompatActivity) getActivity();
+        final ActionBar ab = appCompatActivity.getSupportActionBar();
+        if (ab != null && !ab.isShowing())
+            ab.show();;
     }
 
     @Override
