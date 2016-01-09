@@ -132,7 +132,7 @@ public class FeedViewerActivity extends AbsBaseActivity implements ObservableScr
     @Override
     protected void onPostCreate(Bundle savedInstanceState) {
         super.onPostCreate(savedInstanceState);
-        imageGetterUtils = new ImageGetterUtils(this, content, PreferenceUtils.getBoolean(this, PreferenceUtils.Preferences.DOWNLOAD_IMAGES));
+        imageGetterUtils = new ImageGetterUtils(content, PreferenceUtils.getBoolean(this, PreferenceUtils.Preferences.DOWNLOAD_IMAGES));
 
         setSupportActionBar(toolbar);
         ActionBar actionBar = getSupportActionBar();

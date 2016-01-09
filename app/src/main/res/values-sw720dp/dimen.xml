@@ -21,4 +21,7 @@
     <dimen name="drawer_image_weight">300dp</dimen>
     <dimen name="feed_activity_margin">75dp</dimen>
     <dimen name="feed_activity_margin1">30dp</dimen>
+
+    <dimen name="feed_viewer_img_width">500px</dimen>
+    <dimen name="feed_viewer_img_height">600px</dimen>
 </resources>

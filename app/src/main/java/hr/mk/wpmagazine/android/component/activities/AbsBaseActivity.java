@@ -353,7 +353,6 @@ public class AbsBaseActivity extends AppCompatActivity {
     }
 
     public void SendRegIDTOServer(final String regid) throws Exception {
-
         HttpClient httpclient = new DefaultHttpClient();
         HttpPost httppost = new HttpPost(getResources().getString(R.string.baseUrl) + "?regId=" + regid);
         httpclient.execute(httppost);
