@@ -150,7 +150,7 @@ public class UpdaterService extends Service {
                 delay = TWO_HOURS;// two hours ;)
             }
         } catch (Exception e) {
-            Log.d(TAG, "", e);
+            Log.e(TAG, "", e);
             delay = TEN_MIN;
         } finally {
 
@@ -190,7 +190,7 @@ public class UpdaterService extends Service {
             Log.d(TAG, "Stored all data in data base in : " + String.valueOf(System.currentTimeMillis() - startTime) + "ms" + " data size: " + wpPost.length);
 
         } catch (Exception e) {
-            Log.d(TAG, "", e);
+            Log.e(TAG, "", e);
             eventBus.post(new BusEvents(null, BusEvents.EvenType.GET_DATA_FAIL));
         } finally {
             if (success) {

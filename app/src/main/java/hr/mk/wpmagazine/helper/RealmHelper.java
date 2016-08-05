@@ -86,7 +86,7 @@ public final class RealmHelper {
     public static <E extends RealmObject> RealmResults<E> queryEqualTo(final Realm realm, final Class<E> eClass, final String field, final boolean... filters) {
 
         try {
-            final RealmQuery realmQuery = realm.where(eClass);
+            final RealmQuery<E> realmQuery = realm.where(eClass);
             int i = 0;
             for (final boolean filter : filters) {
                 if (i != 0)
@@ -105,7 +105,7 @@ public final class RealmHelper {
     public static <E extends RealmObject> RealmResults<E> queryEqualTo(final Realm realm, final Class<E> eClass, final String field, final String... filters) {
 
         try {
-            final RealmQuery realmQuery = realm.where(eClass);
+            final RealmQuery<E> realmQuery = realm.where(eClass);
             int i = 0;
             for (final String filter : filters) {
                 if (i != 0)
@@ -124,7 +124,7 @@ public final class RealmHelper {
     public static <E extends RealmObject> RealmResults<E> queryEqualTo(final Realm realm, final Class<E> eClass, final String field, final int... filters) {
 
         try {
-            final RealmQuery realmQuery = realm.where(eClass);
+            final RealmQuery<E> realmQuery = realm.where(eClass);
             int i = 0;
             for (final int filter : filters) {
                 if (i != 0)
@@ -157,7 +157,7 @@ public final class RealmHelper {
     public static <E extends RealmObject> RealmResults<E> queryContains(final Realm realm, final Class<E> eClass, final String field, final String... filters) {
 
         try {
-            final RealmQuery realmQuery = realm.where(eClass);
+            final RealmQuery<E> realmQuery = realm.where(eClass);
             int i = 0;
             for (final String filter : filters) {
                 if (i != 0)
@@ -173,7 +173,7 @@ public final class RealmHelper {
 
     }
 
-    public static RealmResults getRealmResults(final RealmQuery realmQuery) {
+    public static <E extends RealmObject> RealmResults<E> getRealmResults(final RealmQuery<E> realmQuery) {
         try {
             return realmQuery.findAll();
         } catch (Exception e) {
@@ -182,7 +182,7 @@ public final class RealmHelper {
         }
     }
 
-    public static <E extends RealmObject> RealmResults findAll(final Realm realm, final Class<E> eClass) {
+    public static <E extends RealmObject> RealmResults<E> findAll(final Realm realm, final Class<E> eClass) {
         try {
             return realm.where(eClass).findAll();
         } catch (Exception e) {
@@ -191,7 +191,7 @@ public final class RealmHelper {
         }
     }
 
-    public static <E extends RealmObject> RealmResults findAll(final Context context, final Class<E> eClass) {
+    public static <E extends RealmObject> RealmResults<E> findAll(final Context context, final Class<E> eClass) {
         Realm realm = null;
 
         try {

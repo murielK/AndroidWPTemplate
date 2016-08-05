@@ -220,7 +220,9 @@ public abstract class AbsWPPostsFragment extends AbsBaseFragment implements WPAd
 
     @Override
     public void onEventMainThread(BusEvents event) {
-        if (event.evenType == BusEvents.EvenType.DATA_BASE_UPDATED || event.evenType == BusEvents.EvenType.DATA_BASE_UPDATED_FAIL || event.evenType == BusEvents.EvenType.DATA_BASE_IS_UP_TO_DATE) {
+        if (event.evenType == BusEvents.EvenType.DATA_BASE_UPDATED ||
+                event.evenType == BusEvents.EvenType.DATA_BASE_UPDATED_FAIL ||
+                event.evenType == BusEvents.EvenType.DATA_BASE_IS_UP_TO_DATE) {
             swipeRefreshLayout.setRefreshing(false);
             if (event.evenType == BusEvents.EvenType.DATA_BASE_UPDATED)
                 onDataBaseUpdated();

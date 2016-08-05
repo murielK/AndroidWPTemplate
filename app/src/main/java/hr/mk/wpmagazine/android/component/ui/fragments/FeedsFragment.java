@@ -45,7 +45,8 @@ public class FeedsFragment extends AbsFeedFragment {
     public static final String COLOR_KEY = "COLOR_KEY";
     private static final ConcurrentHashMap<String, Integer> CACHE_IDS = new ConcurrentHashMap<>();
     private static final long DELAY = 1800000; /*1800000*/
-    private static final String field = "terms.category.slug";
+    private static final String CAT_FIELD_SLUG = "terms.category.slug";
+    private static final String CAT_FIELD_NAME = "terms.category.name";
 
     protected String title;
     protected int color;
@@ -70,8 +71,13 @@ public class FeedsFragment extends AbsFeedFragment {
     }
 
     private void getArticles() {
-        final String[] strings = getActivity().getResources().getStringArray(getArraysResID());
-        queryArticles(field, strings);
+        final int arraysResId = getArraysResID();
+        if (arraysResId == 0)
+            queryArticles(CAT_FIELD_NAME,title);
+        else {
+            final String[] strings = getActivity().getResources().getStringArray(getArraysResID());
+            queryArticles(CAT_FIELD_SLUG, strings);
+        }
     }
 
     private void saveLastUpdateMillis() {

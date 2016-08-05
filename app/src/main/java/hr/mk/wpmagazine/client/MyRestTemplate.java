@@ -20,7 +20,6 @@ import android.util.Log;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
-import com.fasterxml.jackson.databind.util.ISO8601DateFormat;
 
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
@@ -34,7 +33,9 @@ import org.springframework.web.client.ResponseExtractor;
 
 import java.io.IOException;
 import java.net.URI;
+import java.text.SimpleDateFormat;
 import java.util.Collections;
+import java.util.Locale;
 import java.util.Map;
 import java.util.TimeZone;
 
@@ -52,9 +53,10 @@ public class MyRestTemplate extends CookieRestTemplate {
     public MyRestTemplate() {
         ObjectMapper mapper = new ObjectMapper();
         mapper.configure(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS, false);
-        final ISO8601DateFormat df = new ISO8601DateFormat();
-        df.setTimeZone(TimeZone.getTimeZone("UTC"));
-        mapper.setDateFormat(df);
+
+        final SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss", Locale.getDefault());
+        dateFormat.setTimeZone(TimeZone.getTimeZone("GMT"));
+        mapper.setDateFormat(dateFormat);
 
         MappingJackson2HttpMessageConverter mc = new MappingJackson2HttpMessageConverter();
         mc.setObjectMapper(mapper);

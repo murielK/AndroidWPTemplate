@@ -47,7 +47,7 @@ public class ImageGetterUtils implements Html.ImageGetter {
 
     private final Object lock = new Object();
     private final WeakReference<TextView> weakTextView;
-    final boolean download;
+    private final boolean download;
 
     private ExecutorService executorService;
     private int counter;

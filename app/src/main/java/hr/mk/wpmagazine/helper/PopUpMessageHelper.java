@@ -45,7 +45,7 @@ public class PopUpMessageHelper {
     private View popUpView;
     private PopupWindow window;
     private boolean isShowing;
-    private OnPopUpListner listner;
+    private OnPopUpListener listener;
     private ImageView imageView;
     private TextView textView;
     private Drawable imageDrawable;
@@ -96,8 +96,8 @@ public class PopUpMessageHelper {
         if (isShowing) {
             dismissedAt = System.currentTimeMillis();
             hide(); // dismiss
-            if (listner != null)
-                listner.onDismiss();
+            if (listener != null)
+                listener.onDismiss();
         }
     }
 
@@ -132,8 +132,8 @@ public class PopUpMessageHelper {
         Rect rect = new Rect(location[0], location[1], location[0] + viewGroup.getWidth(), location[1] + viewGroup.getHeight());
         window.showAtLocation(viewGroup, Gravity.NO_GRAVITY, rect.left, rect.bottom / 2);
         isShowing = true;
-        if (listner != null)
-            listner.onShow();
+        if (listener != null)
+            listener.onShow();
     }
 
     public void clear() {
@@ -167,8 +167,8 @@ public class PopUpMessageHelper {
             return;
         window.dismiss();
         isShowing = false;
-        if (listner != null)
-            listner.onHide();
+        if (listener != null)
+            listener.onHide();
     }
 
     @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
@@ -209,11 +209,11 @@ public class PopUpMessageHelper {
         imageView.setImageDrawable(imageDrawable);
     }
 
-    public void setOnPopUpListner(OnPopUpListner listner) {
-        this.listner = listner;
+    public void setOnPopUpListner(OnPopUpListener listner) {
+        this.listener = listner;
     }
 
-    public interface OnPopUpListner {
+    public interface OnPopUpListener {
 
         void onShow();
 
