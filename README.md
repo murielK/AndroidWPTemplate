@@ -27,7 +27,7 @@ The app supports devices running Android 4.0.3+ and is optimized for phone and t
 ![alt text][image4]
 
 
-#Copyright
+# Copyright
 
 Licensed under the GNU General Public License v2.0
 
