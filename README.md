@@ -4,7 +4,7 @@ AndroidWPTemplate is flexible, easy to use, beautiful and pleasant Android templ
 
 The app supports devices running Android 4.0.3+ and is optimized for phone and tablets of all shapes and sizes.
 
-#Feature
+# Feature
 
 * Read article even when offline (only images are supported in article).
 * Push notification for real time notification of new articles
@@ -12,12 +12,12 @@ The app supports devices running Android 4.0.3+ and is optimized for phone and t
 * Create list of your favorite articles
 * Share articles on Whatsapp, Facebook, Twitter etc.
 
-#How to Work with the Source
+# How to Work with the Source
 
 * [How to build](https://github.com/murielK/AndroidWPTemplate/blob/master/BUILDING.md)
 * [Set up](https://github.com/murielK/AndroidWPTemplate/blob/master/SETUP.md)
 
-#Sample Application
+# Sample Application
 
 * [LWN Magazine](https://play.google.com/store/apps/details?id=hr.mk.wpmagazine.lwn)
 
